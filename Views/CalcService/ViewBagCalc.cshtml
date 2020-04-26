@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+<h3>@ViewBag.calcTitle</h3><br>
+
+    <div><strong>Value First: @ViewBag.firstRandom</strong></div>
+    <div><strong>Rand Value Second: @ViewBag.secondRandom</strong></div>
+
+    <div><strong>Add: </strong></div>
+    <div>
+        @ViewBag.firstRandom + @ViewBag.secondRandom = @ViewBag.add
+    </div>
+
+    <div><strong>Sub: </strong></div>
+    <div>
+        @ViewBag.firstRandom - @ViewBag.secondRandom = @ViewBag.sub
+    </div>
+
+    <div><strong>Mult: </strong></div>
+    <div>
+        @ViewBag.firstRandom * @ViewBag.secondRandom = @ViewBag.mult
+    </div>
+
+    <div><strong>Div: </strong>
+    <div>
+        @ViewBag.firstRandom / @ViewBag.secondRandom = @ViewBag.div
+    </div>
+
+</div>
