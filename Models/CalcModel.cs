@@ -4,25 +4,36 @@ namespace Backend1.Models
 {
     public class CalcModel
     {
-        public int add(int firstInt, int secondInt)
+        public int _firstRandom;
+        public int _secondRandom;
+
+        public CalcModel()
         {
-            return firstInt + secondInt;
+            var rand = new Random();
+
+            _firstRandom = rand.Next(0, 10);
+            _secondRandom = rand.Next(0, 10);
         }
 
-        public int sub(int firstInt, int secondInt)
+        public int add()
         {
-            return firstInt - secondInt;
+            return _firstRandom + _secondRandom;
         }
 
-        public int mult(int firstInt, int secondInt)
+        public int sub()
         {
-            return firstInt * secondInt;
+            return _firstRandom - _secondRandom;
         }
 
-        public int div(int firstInt, int secondInt)
+        public int mult()
+        {
+            return _firstRandom * _secondRandom;
+        }
+
+        public int div()
         {
             try {
-                int result = firstInt / secondInt;
+                int result = _firstRandom / _secondRandom;
                 return result;
             }
             catch (DivideByZeroException) {

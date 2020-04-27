@@ -20531,6 +20531,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/marat/web-labs/Backend1/Views/CalcService/Injection.cshtml",
+      "TargetPath": "Views\\CalcService\\Injection.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/marat/web-labs/Backend1/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

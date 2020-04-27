@@ -23,7 +23,7 @@ namespace Backend1.Controllers
             return View();
         }
 
-        public IActionResult ViewDataCalc()
+        public IActionResult PassUsingViewData()
         {
             ViewData["calcTitle"] = "PassUsingViewData";
 
@@ -51,7 +51,7 @@ namespace Backend1.Controllers
             return View("ViewDataCalc");
         }
 
-        public IActionResult ViewBagCalc()
+        public IActionResult PassUsingViewBag()
         {
             ViewBag.calcTitle = "PassUsingViewBag";
 
@@ -79,28 +79,29 @@ namespace Backend1.Controllers
             return View("ViewBagCalc");
         }
 
-        public IActionResult WithModelCalc()
+        public IActionResult PassUsingModel()
         {
             ViewData["calcTitle"] = "PassUsingModel";
 
             CalcModel calcModel = new CalcModel();
 
-            var rand = new Random();
-            int firstRandom = rand.Next(0, 10);
-            int secondRandom = rand.Next(0, 10);
-
-            ViewData["firstRandom"] = firstRandom;
-            ViewData["secondRandom"] = secondRandom;
-            ViewData["add"] = calcModel.add(firstRandom, secondRandom);
-            ViewData["sub"] = calcModel.sub(firstRandom, secondRandom);
-            ViewData["mult"] = calcModel.mult(firstRandom, secondRandom);
-            if (calcModel.div(firstRandom, secondRandom) < 0) {
+            ViewData["firstRandom"] = calcModel._firstRandom;
+            ViewData["secondRandom"] = calcModel._secondRandom;
+            ViewData["add"] = calcModel.add();
+            ViewData["sub"] = calcModel.sub();
+            ViewData["mult"] = calcModel.mult();
+            if (calcModel.div() < 0) {
                 ViewData["div"] = "error";
             } else {
-                ViewData["div"] = calcModel.div(firstRandom, secondRandom);
+                ViewData["div"] = calcModel.div();
             }
 
             return View("ModelCalc");
+        }
+
+        public IActionResult AccessServiceDirectly()
+        {
+            return View("Injection");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -37,3 +37,4 @@
 /home/marat/web-labs/Backend1/obj/Debug/netcoreapp3.1/Razor/Views/CalcService/ViewDataCalc.cshtml.g.cs
 /home/marat/web-labs/Backend1/obj/Debug/netcoreapp3.1/Razor/Views/CalcService/ViewBagCalc.cshtml.g.cs
 /home/marat/web-labs/Backend1/obj/Debug/netcoreapp3.1/Razor/Views/CalcService/ModelCalc.cshtml.g.cs
+/home/marat/web-labs/Backend1/obj/Debug/netcoreapp3.1/Razor/Views/CalcService/Injection.cshtml.g.cs
