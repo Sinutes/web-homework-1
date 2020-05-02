@@ -81,22 +81,9 @@ namespace Backend1.Controllers
 
         public IActionResult PassUsingModel()
         {
-            ViewData["calcTitle"] = "PassUsingModel";
-
             CalcModel calcModel = new CalcModel();
 
-            ViewData["firstRandom"] = calcModel._firstRandom;
-            ViewData["secondRandom"] = calcModel._secondRandom;
-            ViewData["add"] = calcModel.add();
-            ViewData["sub"] = calcModel.sub();
-            ViewData["mult"] = calcModel.mult();
-            if (calcModel.div() < 0) {
-                ViewData["div"] = "error";
-            } else {
-                ViewData["div"] = calcModel.div();
-            }
-
-            return View("ModelCalc");
+            return View(calcModel);
         }
 
         public IActionResult AccessServiceDirectly()

@@ -1,0 +1,31 @@
+﻿@{
+    @model Backend1.Models.CalcModel;
+}
+
+<div>
+<h3>@Model._title</h3><br>
+
+    <div><strong>Value First: @Model._firstRandom</strong></div>
+    <div><strong>Rand Value Second: @Model._secondRandom</strong></div>
+
+    <div><strong>Add: </strong></div>
+    <div>
+        @Model._firstRandom + @Model._secondRandom = @Model.add()
+    </div>
+
+    <div><strong>Sub: </strong></div>
+    <div>
+        @Model._firstRandom - @Model._secondRandom = @Model.sub()
+    </div>
+
+    <div><strong>Mult: </strong></div>
+    <div>
+        @Model._firstRandom * @Model._secondRandom = @Model.mult()
+    </div>
+
+    <div><strong>Div: </strong>
+    <div>
+        @Model._firstRandom / @Model._secondRandom = @Model.div()
+    </div>
+
+</div>

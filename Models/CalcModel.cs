@@ -6,6 +6,8 @@ namespace Backend1.Models
     {
         public int _firstRandom;
         public int _secondRandom;
+        public string _title = "PassUsingModel";
+
 
         public CalcModel()
         {
@@ -30,15 +32,15 @@ namespace Backend1.Models
             return _firstRandom * _secondRandom;
         }
 
-        public int div()
+        public string div()
         {
             try {
-                int result = _firstRandom / _secondRandom;
-                return result;
+                var result = _firstRandom / _secondRandom;
+                return result.ToString();
             }
             catch (DivideByZeroException) {
                 Console.Write("error");
-                return -1;
+                return "error";
             }
         }
     }

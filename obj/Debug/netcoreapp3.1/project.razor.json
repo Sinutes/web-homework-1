@@ -20521,11 +20521,6 @@
   "RootNamespace": "Backend1",
   "Documents": [
     {
-      "FilePath": "/home/marat/web-labs/Backend1/Views/CalcService/ModelCalc.cshtml",
-      "TargetPath": "Views\\CalcService\\ModelCalc.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/marat/web-labs/Backend1/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -20548,6 +20543,11 @@
     {
       "FilePath": "/home/marat/web-labs/Backend1/Views/CalcService/ViewBagCalc.cshtml",
       "TargetPath": "Views\\CalcService\\ViewBagCalc.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/marat/web-labs/Backend1/Views/CalcService/PassUsingModel.cshtml",
+      "TargetPath": "Views\\CalcService\\PassUsingModel.cshtml",
       "FileKind": "mvc"
     },
     {
